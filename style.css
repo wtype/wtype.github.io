@@ -1,0 +1,192 @@
+:root {
+    font-size: 16px;
+}
+
+html {
+   font-family: 'open sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+    
+    body p {
+        max-width: 300px;
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+
+p a {
+    padding: 0;
+    color: darkblue;
+}
+
+b {
+    color: #505dff;
+}
+/*
+header {
+    background-color: #fcfcfc;
+    height: 65px;
+    box-shadow: 0px 0px 3px 1px
+}
+*/
+#logo {
+    float: left;
+    margin-top: 14px;
+    padding-left: 25px;
+}
+
+#logo a:hover {
+    color: #3f00cc;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    float: right;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 22px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.valprop {
+    font-size: 4em;
+    margin: 50px;
+    margin-left: 86px;
+    text-align: left;
+    color: #00bf93;
+    letter-spacing: -2px;
+}
+
+.valp {
+    font-size: 1.2em;
+    margin: 89px;
+    text-align: left;
+    width: 788px;
+    margin-top: -40px;
+    padding-bottom: 2em;
+    border-bottom: 3px solid darkslategrey;
+}
+
+.ball {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position:relative;
+    left: 700px;
+    animation-name: ball;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball {
+    0% {left: 100px;)}
+    100% {left: 400px;}
+}
+    
+#a {
+    background-color: #6200ff;
+    animation-delay: 0s;
+    }
+    
+#b {
+    background-color: #7926ff;
+    animation-delay: 0.04s;
+    }
+#c {
+    background-color: #8a43fd;
+    animation-delay: 0.08s;
+    }
+#d {
+    background-color: #9756ff;
+    animation-delay: 0.12s;
+    }  
+    
+#e {
+    background-color: #b764ff;
+    animation-delay: 0.16s;
+    }
+#f {
+    background-color: #c456ff;
+    animation-delay: 0.20s;
+    }
+#g {
+    background-color: #f144ff;
+    animation-delay: 0.25s;
+    }
+#h {
+    background-color: #ec56ff;
+    animation-delay: 0.30s;
+    }
+#i {
+    background-color: #ff53b0;
+    animation-delay: 0.36s;
+    }
+
+
+
+
+    
+.ball2 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position:relative;
+    left: 700px;
+    animation-name: ball;
+    animation-duration: 1.0012s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball2 {
+    0% {left: 100px;)}
+    100% {left: 400px;}
+}
+
+.ball3 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position:relative;
+    left: 700px;
+    animation-name: ball;
+    animation-duration: 1.001s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball3 {
+    0% {left: 100px;)}
+    100% {left: 400px;}
+}
