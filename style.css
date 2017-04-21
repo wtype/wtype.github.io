@@ -190,3 +190,236 @@ a:hover {
     0% {left: 100px;)}
     100% {left: 400px;}
 }
+
+#cloud1, #cloud2, #cloud3, #cloud4, #cloud5, #cloud6, #cloud7 {
+    position: absolute;
+    z-index: 2;
+    height: 5%;
+    width: auto;
+    opacity: .8;
+    perspective: 1000;
+}
+
+#cloud1 {
+    left: 200px;
+    top: 500px;
+    height: 3%;
+    animation: cloud1;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+}
+
+#cloud2 {
+    left: 350px;
+    top: 700px;
+    height: 4%;
+    animation: cloud2;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+}
+
+#cloud3 {
+    left: 600px;
+    top: 600px;
+    height: 3%;
+    animation: cloud3;
+    animation-iteration-count: infinite;
+    animation-duration: 14s;
+}
+
+@keyframes cloud1 {
+    0% {left: 200px; top: 500px;}
+    50% {left: 380px; top: 500px;}
+}
+
+@keyframes cloud2 {
+    0% {left: 350px; top: 700px;}
+    50% {left: 400px; top: 722px;}
+}
+
+@keyframes cloud3 {
+    0% {left: 600px; top: 600px;}
+    50% {left: 545px; top: 580px;}
+}
+
+#cloud4 {
+    right: 300px;
+    top: 700px;
+    height: 3%;
+    animation: cloud4;
+    animation-iteration-count: infinite;
+    animation-duration: 27s;
+}
+
+#cloud5 {
+    right: 500px;
+    top: 800px;
+    height: 4.2%;
+    animation: cloud5;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+}
+
+#cloud6 {
+    right: 700px;
+    top: 650px;
+    height: 4%;
+    animation: cloud6;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+#cloud7 {
+    right: 100px;
+    top: 500px;
+    height: 3%;
+    animation: cloud7;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+@keyframes cloud4 {
+    0% {right: 300px; top: 700px;}
+    50% {right: 400px; top: 700px;}
+}
+
+@keyframes cloud5 {
+    0% {right: 500px; top: 800px;}
+    50% {right: 445px; top: 780px;}
+}
+
+@keyframes cloud6 {
+    0% {right: 700px; top: 650px;}
+    50% {right: 765px; top: 580px;}
+}
+
+@keyframes cloud7 {
+    0% {right: 100px; top: 500px;}
+    50% {right: 125px; top: 467px;}
+}
+
+.container1 {
+    height: 36vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+#hot-air-balloon {
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    height: 7%;
+    width: 7%;
+    animation: balloons;
+    animation-iteration-count: infinite;
+    animation-duration: 45s;
+    animation-delay: 15s;
+    
+}
+
+@keyframes balloons {
+    0% {right: 50px; bottom: 0px; z-index: -4;}
+    70% {z-index: 5;}
+    100% {right: 3000px; bottom: 860px;}
+}
+
+#title {
+    float: left;
+    padding: 0;
+    margin-left: 25px;
+    width: 40%;
+}
+
+#title:hover {
+    color: #0076ff;
+    transition: 135ms;
+}
+
+nav {
+    width: 40%;
+    float: right;
+    line-height: .7em;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+    padding-right: 55px;
+}
+
+nav ul li a {
+    color: #575757;
+    text-decoration: none;
+} 
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #0076ff;
+    transition: 135ms;
+}
+
+/*--------------------------------------*/
+
+.front-door {
+    position: relative;
+    padding-top: 6vh;
+    width: 100%;
+    height: auto;
+    background: #E1EBE8;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.left-door {
+    height: 48vh;
+    width: 50%;
+    float: left;
+}
+
+.right-door {
+    height: 48vh;
+    width: 50%;
+    float: right;
+}
+
+#mountains1 {
+    position: absolute;
+    left: -195px;
+    height: 50vh;
+    width: auto;
+    top: 253px;
+    z-index: -1;
+}
+
+#mountains2 {
+    position: absolute;
+    right: -50px;
+    height: 50vh;
+    width: auto;
+    top: 253px;
+    z-index: -1;
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+    top: -300px;
+    left: -63px;
+    margin: 0 auto;
+    text-align: center; 
+    font-size: 5em;
+    color: #428d70;
+    font-family: 'Great Vibes', cursive;
+}
+
+b {
+    font-size: 1.8em;
+}
+
