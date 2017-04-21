@@ -46,6 +46,10 @@ header {
     transition: 135ms;
 }
 
+body h3 {
+    text-align: center;
+}
+
 nav {
     width: 40%;
     float: right;
