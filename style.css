@@ -1,185 +1,193 @@
+* {
+    color: #393939;
+}
+
 :root {
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    transition: 135ms;
+}
+
+::selection {
+    background-color: #877fea;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #877fea;
+    color: #ffffff;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    cursor: pointer;
-}
-
-header { 
     width: 100%;
-    height: 6vh auto;
-    background-color: #ffffff;
-    box-shadow: 1px 0.4px 1px 0px rgba(128, 128, 128, 0.6);
-    position: fixed;
-    z-index: 3;
+    height: 100%;
 }
 
- @media screen and (max-width: 600px) {
-     header nav {
-        display: none;
-     }
-}
-
-#title {
-    float: left;
-    padding: 0;
-    margin-left: 25px;
-    width: 40%;
-}
-
-#title:hover {
-    color: #0076ff;
-    transition: 135ms;
-}
-
-body h3 {
-    text-align: center;
-}
-
-nav {
-    width: 40%;
-    float: right;
-    line-height: .7em;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 1em;
-    padding-right: 55px;
-}
-
-nav ul li a {
-    color: #575757;
+p a {
+    color: #4c22ff;
     text-decoration: none;
-} 
+}
 
-nav ul li a:hover {
+p a:hover {
     text-decoration: underline;
-    color: #0076ff;
-    transition: 135ms;
 }
 
-/*--------------------------------------*/
-
-.front-door {
-    position: relative;
-    padding-top: 6vh;
-    width: 100%;
-    height: auto;
-    background: #E1EBE8;
-    z-index: 0;
-    overflow: hidden;
+header {
+    width: 73vw;
+    height: 50px;
+    margin: auto;
+    border-bottom: 1.6px solid #393939;
 }
 
-.left-door {
-    height: 48vh;
-    width: 50%;
-    float: left;
-}
-
-.right-door {
-    height: 48vh;
-    width: 50%;
-    float: right;
-}
-
-#mountains1 {
-    position: absolute;
-    left: -195px;
-    height: 50vh;
-    width: auto;
-    top: 253px;
-    z-index: -1;
-}
-
-#mountains2 {
-    position: absolute;
-    right: -50px;
-    height: 50vh;
-    width: auto;
-    top: 253px;
-    z-index: -1;
-}
-
-h1 {
-    position: relative;
-    z-index: 1;
-    top: -300px;
-    left: -63px;
-    margin: 0 auto;
-    text-align: center; 
-    font-size: 5em;
-    color: #428d70;
-    font-family: 'Great Vibes', cursive;
+header h2 {
+    font-family: 'Vibur', cursive;
+    color: #393939;
+    font-size: 2em;
+    text-align: center;
 }
 
 b {
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
+i {
+    font-size: 1.3em;
+    font-style: normal;
+}
 
-#blue {
-    margin-top: 100vh;
-    background-color: #00ADEF;
-    width: 65em;
-    height: 65em;
+.main {
+    padding-top: 50px;
+    margin: auto;
+    width: 73vw;
+    height: 50vh;
+}
+
+.left {
     float: left;
+    width: 47.5%;
+    height: 100%;
+    text-align: left;
 }
 
-#blue2 {
-    margin-top: 100vh;
-    background-color: #E0EBE8;
-    width: 65em;
-    height: 65em;
+.right {
     float: right;
+    width: 47.5%;
+    height: 100%;
+    text-align: left;
 }
 
-#Blog {
-    float: right;
-    height: 5.922vh auto;
-    width: 15vh;
-    background-color: #4ab189;
-    position: fixed;
-    right: 0;
-    top: 0;
+.right img {
+    margin-top: 94px;
+    width: 100%;
+    height: auto;
+}
+
+#head h2 {
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #393939;
+    width: 48%;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+.left ul {
+    margin-top: 45px;
+}
+
+.left ul li {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    list-style: none;
+}
+
+.left ul li a {
+    padding: 11px;
+    text-decoration: none;
+    color: #4c22ff;
+    font-size: 1.1em;
+}
+
+ul li a:hover {
+    transition: 135ms;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1020px) {
+    .left, .right {
+        width: 100%;
+        float: left;
+    }
+    .right {
+        margin-top: -950px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .main {
+        height: 80vh;
+    }
+    .left, .right {
+        width: 100%;
+        float: left;
+    }
+    .right {
+        margin-top: -250px;
+    }
+}
+
+.photos {
+    width: 73vw;
+    margin: auto;
+    margin-top: 500px;
+    height: 40vh;
+    background-color: tomato;
+}
+
+.lower-main {
+    background-color: black;
+    height: 20vh;
+}
+
+.berg {
     text-align: center;
-    border-left: 3px solid rgba(237, 237, 237, 0.87);
-    border-bottom: 2px solid rgba(237, 237, 237, 0.87);
+    width: 100vw;
+    overflow: hidden;
 }
 
-#Blog a {
-    line-height: 4.6em;
-    color: white;
+.berg h2 {
+    font-size: 22em;
+    font-family: sans-serif;
+    letter-spacing: -0.24em;
+    color: black;
+    border-bottom: 120px solid black;
+    border-top: 120px solid black;
+    line-height: 0.5;
+    margin-bottom: 0px;
 }
 
-#Blog:hover {
-    transition: 150ms;
-    background-color: rgba(74, 177, 137, 0.92);
-    cursor: pointer;
-    text-decoration: underline;
+.video-gallery {
+    margin: auto;
 }
 
-#Blog a:hover {
-    text-decoration: underline;
+.video {
+    text-align: center;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
 }
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 #cloud1, #cloud2, #cloud3, #cloud4, #cloud5, #cloud6, #cloud7 {
     position: absolute;
@@ -307,7 +315,6 @@ b {
     animation-iteration-count: infinite;
     animation-duration: 45s;
     animation-delay: 15s;
-    
 }
 
 @keyframes balloons {
@@ -316,102 +323,43 @@ b {
     100% {right: 3000px; bottom: 860px;}
 }
 
-
-
-/*http://seanhalpin.io/   also make a little train that shoot around the screen on a track*/
-
-
-.ball {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    position:relative;
-    left: 700px;
-    animation-name: ball;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+.front-door {
+    position: relative;
+    padding-top: 6vh;
+    width: 100%;
+    height: auto;
+    background: #E1EBE8;
+    z-index: 0;
+    overflow: hidden;
 }
 
-@keyframes ball {
-    0% {left: 100px;)}
-    100% {left: 400px;}
-}
-    
-#a {
-    background-color: #6200ff;
-    animation-delay: 0s;
-    }
-    
-#b {
-    background-color: #7926ff;
-    animation-delay: 0.04s;
-    }
-#c {
-    background-color: #8a43fd;
-    animation-delay: 0.08s;
-    }
-#d {
-    background-color: #9756ff;
-    animation-delay: 0.12s;
-    }  
-    
-#e {
-    background-color: #b764ff;
-    animation-delay: 0.16s;
-    }
-#f {
-    background-color: #c456ff;
-    animation-delay: 0.20s;
-    }
-#g {
-    background-color: #f144ff;
-    animation-delay: 0.25s;
-    }
-#h {
-    background-color: #ec56ff;
-    animation-delay: 0.30s;
-    }
-#i {
-    background-color: #ff53b0;
-    animation-delay: 0.36s;
-    }
-
-
-
-
-    
-.ball2 {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    position:relative;
-    left: 700px;
-    animation-name: ball;
-    animation-duration: 1.0012s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+.left-door {
+    height: 48vh;
+    width: 50%;
+    float: left;
 }
 
-@keyframes ball2 {
-    0% {left: 100px;)}
-    100% {left: 400px;}
+.right-door {
+    height: 48vh;
+    width: 50%;
+    float: right;
 }
 
-.ball3 {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    position:relative;
-    left: 700px;
-    animation-name: ball;
-    animation-duration: 1.001s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+#mountains1 {
+    position: absolute;
+    left: -135px;
+    height: 50vh;
+    width: auto;
+    top: 253px;
+    z-index: -1;
 }
 
-@keyframes ball3 {
-    0% {left: 100px;)}
-    100% {left: 400px;}
+#mountains2 {
+    position: absolute;
+    right: -170px;
+    height: 50vh;
+    width: auto;
+    top: 253px;
+    z-index: -1;
 }
 
