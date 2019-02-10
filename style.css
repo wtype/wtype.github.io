@@ -156,7 +156,6 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    
     background-color: #f5fdff;
     background-color: #03384b;
     margin: auto;
@@ -302,6 +301,35 @@ h2 {
 
 textarea:focus, input:focus{
     outline: 2px solid #ff4646;
+}
+
+.linkys {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom:30px;
+    left:30px;
+}
+
+.linkys a i {
+    color: #e3e1d5;
+    padding: 25px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.linkys a:hover {
+    -webkit-box-shadow: 0px 9px 0px #ff4646;
+            box-shadow: 0px 9px 0px #ff4646;
+}
+
+.linkys a:hover linkys a {
+    color: red;
+}
+
+.linkys a i:focus, .linkys a i:active {
+    color:#012633;
 }
 
 @media screen and (max-width: 500px) {
