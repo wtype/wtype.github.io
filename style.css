@@ -13,6 +13,7 @@ html, body {
 html {
     overflow: hidden;
     height: 100%;
+    background-color: #001015;
 }
 
 body {
@@ -305,7 +306,8 @@ textarea:focus, input:focus{
 
 @media screen and (max-width: 500px) {
     h1 {
-        font-size: calc(70px + 6 * ((100vw - 369px) / 680));
+        margin-top: 20vh;
+        font-size: calc(50px + 6 * ((100vw - 369px) / 680));
         padding-bottom: 48.5px;
         line-height: 0.90;
     }
@@ -320,17 +322,24 @@ textarea:focus, input:focus{
     .innerbox {
         padding-top: 1.5em;
     }
+    .texty {
+        margin-top: 20px;
+    }
     .texty h3 {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
     .texty h4 {
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
     .innerbox {
         min-width: 320px;
     }
     .texty form {
         min-height: 350px;
+        width: 100%;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
     }
     .texty form * {
         height: 20%;
