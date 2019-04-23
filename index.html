@@ -54,26 +54,24 @@
             </div>
     </body>
 <script>
-    (function() {
-        "use strict";
+    "use strict";
 
-        const boxy = document.getElementById('boxybox');
-        const button = document.getElementById("contact");
-        const closer = document.getElementsByClassName("hide")[0];
+    const boxy = document.getElementById('boxybox');
+    const button = document.getElementById("contact");
+    const closer = document.getElementsByClassName("hide")[0];
 
-        button.onclick = function() {
-            boxy.style.display = "block";
-        }
+    button.onclick = function() {
+        boxy.style.display = "block";
+    }
 
-        closer.onclick = function() {
+    closer.onclick = function() {
+        boxy.style.display = "none";
+    }
+
+    window.onclick = function(e) {
+        if (e.target == boxy) {
             boxy.style.display = "none";
         }
-
-        window.onclick = function(e) {
-            if (e.target == boxy) {
-                boxy.style.display = "none";
-            }
-        }
-    }();
+    }
 </script>
 </html>
