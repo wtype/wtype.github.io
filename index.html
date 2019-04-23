@@ -23,7 +23,7 @@
   "@type": "person",
   "name": "Elliott Berger",
   "jobTitle": "Data Scientist",
-  "url": "http//www.elliottberger.com/"
+  "url": "https//www.elliottberger.com/"
 }
  </script>    
 </head>
@@ -40,7 +40,7 @@
                     <h3>Send A Message</h3>
                     <h4>Enter email and message below.</h4>
                     <form method="POST" action="https://formspree.io/elliott.s.berger@gmail.com">
-                        <input type="email" name="email" placeholder="Your Email">
+                        <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" placeholder="Message"></textarea>
                         <button type="submit">Send</button>
                     </form>
@@ -49,29 +49,31 @@
         </div>
             <div class="linkys">
                 <a  target="_blank" href="https://www.instagram.com/ebergster/"><i class="fab fa-instagram"></i></a>
-                <a  target="_blank" href="https://www.versedcoffee.com"><i class="fas fa-coffee"></i></a>
+                <a  target="_blank" href="https://www.verstcoffee.com"><i class="fas fa-coffee"></i></a>
                 <a  target="_blank" href="https://traitdigital.com/"><i class="fas fa-dragon"></i></a>
             </div>
     </body>
 <script>
-    "use strict";
-    
-    let boxy = document.getElementById('boxybox');
-    let button = document.getElementById("contact");
-    let closer = document.getElementsByClassName("hide")[0];
+    (function() {
+        "use strict";
 
-    button.onclick = function() {
-        boxy.style.display = "block";
-    }
-    
-    closer.onclick = function() {
-        boxy.style.display = "none";
-    }
-    
-    window.onclick = function(e) {
-        if (e.target == boxy) {
+        const boxy = document.getElementById('boxybox');
+        const button = document.getElementById("contact");
+        const closer = document.getElementsByClassName("hide")[0];
+
+        button.onclick = function() {
+            boxy.style.display = "block";
+        }
+
+        closer.onclick = function() {
             boxy.style.display = "none";
         }
-    }
+
+        window.onclick = function(e) {
+            if (e.target == boxy) {
+                boxy.style.display = "none";
+            }
+        }
+    }();
 </script>
 </html>
