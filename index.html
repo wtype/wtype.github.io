@@ -1,96 +1,27 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Elliott Berger – Digital Marketing Strategy Consultant &nbsp; &nbsp; 🍫
-    </title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elliott Berger</title>
     <meta
       name="description"
-      content="Seattle-based digital marketing analyst and front-end developer specializing in website packages with built-in marketing plans for growth and ROI tracking."
+      content="I'm Elliott Berger—a web developer and designer in Boise, Idaho. I take a focused and minimal approach to advancing projects and would love to see if I'm a good fit for yours."
     />
-    <meta
-      name="google-site-verification"
-      content="zbfGcXGuC1FygmZh74RT3yE7VvAXPlevFlW36n2hRwA"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <script type="application/ld+json">
-      {
-        "@context": "http://www.schema.org",
-        "@type": "person",
-        "name": "Elliott Berger",
-        "jobTitle": "Data Scientist",
-        "url": "https//www.elliottberger.com/"
-      }
-    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script defer src="index.js"></script>
   </head>
   <body>
-    <div class="main">
+    <main role="main">
       <h1>Elliott Berger</h1>
-      <h2>
-        Greater Seattle based digital strategy consultant and front-end
-        developer.
-      </h2>
-      <a href="#" class="button" id="contact">Contact&nbsp;Elliott</a>
-    </div>
-    <div id="boxybox">
-      <div class="innerbox">
-        <span class="hide">x</span>
-        <div class="texty">
-          <h3>Send A Message</h3>
-          <h4>Enter email and message below.</h4>
-          <form
-            method="POST"
-            action="https://formspree.io/elliott.s.berger@gmail.com"
-          >
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit">Send</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="linkys">
-      <a target="_blank" href="https://www.instagram.com/ebergster/"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      <a target="_blank" href="https://www.verstcoffee.com"
-        ><i class="fas fa-coffee"></i
-      ></a>
-      <a target="_blank" href="https://traitdigital.com/"
-        ><i class="fas fa-dragon"></i
-      ></a>
-    </div>
+      <p>
+        I'm a web developer and designer in Boise, Idaho. I love making websites
+        fast, simple, and beautiful; and have produced hundreds of digital
+        projects over the years. Feel free to get in touch about a
+        project&nbsp;or&nbsp;idea.
+      </p>
+      <button type="button">Contact</button>
+    </main>
   </body>
-  <script>
-    const boxy = document.getElementById("boxybox");
-    const button = document.getElementById("contact");
-    const closer = document.getElementsByClassName("hide")[0];
-
-    button.onclick = function () {
-      boxy.style.display = "block";
-    };
-
-    closer.onclick = function () {
-      boxy.style.display = "none";
-    };
-
-    window.onclick = function (e) {
-      if (e.target == boxy) {
-        boxy.style.display = "none";
-      }
-    };
-  </script>
 </html>
