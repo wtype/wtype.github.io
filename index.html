@@ -8,18 +8,37 @@
       name="description"
       content="A humble flicker of Elliott Berger on the web with a small puzzle if you want to try to get in contact."
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
-    <script defer src="index.js"></script>
+    <style>*,*::after,*::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}:root{font-size:10px}:active,:focus{outline:none}::-moz-selection{background:hsl(147, 61%, 38%);color:hsl(0, 0%, 10%)}::selection{background:hsl(147, 61%, 38%);color:hsl(0, 0%, 10%)}body{font-family:-apple-system, BlinkMacSystemFont, sans-serif;-webkit-overflow-scrolling:touch;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:geometricPrecision;background:hsl(0, 0%, 10%);color:hsl(0, 0%, 78%)}main{height:100vh;max-width:100rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:5vw}h1{font-size:6.5rem;letter-spacing:-0.05rem;font-weight:300;line-height:0.95;color:hsl(0, 0%, 100%)}p{margin:4rem 0 5.5rem;font-size:2.75rem;line-height:1.28;font-weight:300}button{cursor:pointer;font-size:3rem;border:none;color:hsl(0, 0%, 10%);background:lightgrey;padding:1.5rem;width:20rem}button:hover{-webkit-filter: brightness(1.5);filter: brightness(1.5)}button:active{-webkit-filter: brightness(0.8);filter: brightness(0.8)}@media (max-width: 600px){:root{font-size:9px}}@media (max-width: 500px){:root{font-size:7.5px}}@media (max-height: 500px){:root{font-size:6px}}</style>
   </head>
   <body>
     <main role="main">
       <h1 role="heading">Elliott Berger</h1>
       <p>
-        I design, engineer, and consult on digital products in Boise, Idaho. I value making work fast, effective, and
-        beautiful. Feel free to get in touch about a project, idea, or business plan.
+        I design, engineer, and consult on digital products in Boise, Idaho. I value making work
+        fast, effective, and beautiful. Feel free to get in touch about a project, idea, or business
+        plan.
       </p>
       <button type="button">Contact</button>
     </main>
+    <script>
+      async function captureEmail() {
+        try {
+          await navigator.clipboard.writeText(`${location.href}meow.txt`);
+        } catch (error) {
+          console.log('Unable to capture email: ', error);
+        }
+      }
+
+      document.querySelector('button').addEventListener('click', e => {
+        e.preventDefault();
+        captureEmail().then(() => {
+          e.target.innerText = 'Copied!';
+          setTimeout(() => {
+            e.target.innerText = 'Contact';
+          }, 1200);
+        });
+      });
+    </script>
   </body>
 </html>
